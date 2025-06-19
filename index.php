@@ -22,48 +22,419 @@
     </div>
     <?php include 'nav.php'; ?>
     <main id="main-content">
-<!-- HERO SECTION -->
-<section id="hero" class="relative h-screen flex items-center justify-center bg-gradient-to-r from-purple-600 via-indigo-600 to-blue-600 text-white overflow-hidden">
 
-    <!-- Animated Background Shapes -->
-    <div class="absolute top-0 left-0 w-full h-full overflow-hidden z-0">
-        <div class="absolute bg-white bg-opacity-10 rounded-full w-16 h-16 animate-bounce-slow" style="top: 20%; left: 10%;"></div>
-        <div class="absolute bg-white bg-opacity-10 rounded-full w-24 h-24 animate-bounce-slower" style="top: 50%; left: 80%;"></div>
-        <div class="absolute bg-white bg-opacity-10 rounded-full w-20 h-20 animate-bounce-slowest" style="top: 70%; left: 30%;"></div>
-    </div>
-
-    <!-- Hero Content -->
-    <div class="z-10 text-center px-4">
-        <h1 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight" id="hero-text"></h1>
-        <p class="text-lg md:text-2xl mb-8">The fastest, easiest way to get your tickets anytime, anywhere.</p>
-        <a href="#features" class="bg-white text-indigo-600 px-8 py-4 rounded-full shadow-lg hover:shadow-indigo-400 transition duration-300 smooth-scroll hover:scale-105 inline-block">Get Started</a>
-
-        <!-- Hero Stats -->
-        <div class="mt-12 flex justify-center space-x-12 text-center">
-            <div>
-                <h2 class="text-3xl font-bold counter" data-target="10000">0</h2>
-                <p class="text-lg">Tickets Sold</p>
-            </div>
-            <div>
-                <h2 class="text-3xl font-bold counter" data-target="5000">0</h2>
-                <p class="text-lg">Happy Customers</p>
-            </div>
-            <div>
-                <h2 class="text-3xl font-bold counter" data-target="200">0</h2>
-                <p class="text-lg">Events Supported</p>
+    <!-- Hero Section -->
+    <section id="home" class="relative h-screen flex items-center justify-center bg-gradient-to-r from-primary to-secondary overflow-hidden">
+        <div class="absolute inset-0 bg-black/30"></div>
+        <div class="container mx-auto px-6 z-10 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold text-white mb-6">
+                <span id="typed-text" class="inline-block"></span>
+                <span class="typing-cursor">|</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-white mb-8 max-w-2xl mx-auto">
+                The easiest way to sell tickets for your events. Fast, secure, and hassle-free.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#pricing" class="bg-white text-primary px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition duration-300 transform hover:scale-105">
+                    Get Started
+                </a>
+                <a href="#how-it-works" class="bg-transparent border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white/10 transition duration-300 transform hover:scale-105">
+                    Learn More
+                </a>
             </div>
         </div>
-    </div>
+        
+        <!-- Animated Scrolling Indicator -->
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <a href="#features" class="text-white">
+                <i class="fas fa-chevron-down text-2xl"></i>
+            </a>
+        </div>
+    </section>
 
-    <!-- Scroll Down Indicator -->
-    <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10">
-        <a href="#features" class="smooth-scroll">
-            <div class="w-8 h-14 border-2 border-white rounded-full flex items-center justify-center animate-bounce">
-                <div class="w-2 h-2 bg-white rounded-full mb-1"></div>
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Amazing Features</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Everything you need to manage your event tickets in one place</p>
             </div>
-        </a>
-    </div>
-</section>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="feature-card bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                    <div class="text-primary mb-6">
+                        <i class="fas fa-ticket-alt text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Easy Ticketing</h3>
+                    <p class="text-gray-600">Create and customize tickets for your events in minutes with our intuitive interface.</p>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="feature-card bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                    <div class="text-primary mb-6">
+                        <i class="fas fa-chart-line text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Real-time Analytics</h3>
+                    <p class="text-gray-600">Track ticket sales, attendance, and revenue with comprehensive dashboards.</p>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="feature-card bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                    <div class="text-primary mb-6">
+                        <i class="fas fa-shield-alt text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Secure Payments</h3>
+                    <p class="text-gray-600">PCI-compliant payment processing with multiple payment options for your attendees.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">How It Works</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Simple steps to get your event up and running</p>
+            </div>
+            
+            <div class="relative">
+                <!-- Progress line -->
+                <div class="hidden md:block absolute left-1/2 h-full w-1 bg-primary/10 transform -translate-x-1/2 top-0"></div>
+                
+                <!-- Steps -->
+                <div class="space-y-12 md:space-y-0">
+                    <!-- Step 1 -->
+                    <div class="step-item flex flex-col md:flex-row items-center md:odd:flex-row-reverse">
+                        <div class="md:w-1/2 mb-8 md:mb-0 md:px-8">
+                            <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                                <span class="step-number flex items-center justify-center w-12 h-12 bg-primary text-white rounded-full font-bold mb-4">1</span>
+                                <h3 class="text-xl font-semibold mb-3">Create Your Event</h3>
+                                <p class="text-gray-600">Set up your event details, date, venue, and ticket types in our easy-to-use dashboard.</p>
+                            </div>
+                        </div>
+                        <div class="md:w-1/2">
+                            <div class="bg-gray-100 h-64 rounded-lg flex items-center justify-center">
+                                <i class="fas fa-calendar-plus text-5xl text-gray-400"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 2 -->
+                    <div class="step-item flex flex-col md:flex-row items-center md:odd:flex-row-reverse">
+                        <div class="md:w-1/2 mb-8 md:mb-0 md:px-8">
+                            <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                                <span class="step-number flex items-center justify-center w-12 h-12 bg-primary text-white rounded-full font-bold mb-4">2</span>
+                                <h3 class="text-xl font-semibold mb-3">Customize Tickets</h3>
+                                <p class="text-gray-600">Design beautiful tickets with your branding, QR codes, and all necessary event information.</p>
+                            </div>
+                        </div>
+                        <div class="md:w-1/2">
+                            <div class="bg-gray-100 h-64 rounded-lg flex items-center justify-center">
+                                <i class="fas fa-ticket-alt text-5xl text-gray-400"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 3 -->
+                    <div class="step-item flex flex-col md:flex-row items-center md:odd:flex-row-reverse">
+                        <div class="md:w-1/2 mb-8 md:mb-0 md:px-8">
+                            <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                                <span class="step-number flex items-center justify-center w-12 h-12 bg-primary text-white rounded-full font-bold mb-4">3</span>
+                                <h3 class="text-xl font-semibold mb-3">Share & Sell</h3>
+                                <p class="text-gray-600">Promote your event through our platform and start selling tickets to attendees.</p>
+                            </div>
+                        </div>
+                        <div class="md:w-1/2">
+                            <div class="bg-gray-100 h-64 rounded-lg flex items-center justify-center">
+                                <i class="fas fa-share-alt text-5xl text-gray-400"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 4 -->
+                    <div class="step-item flex flex-col md:flex-row items-center md:odd:flex-row-reverse">
+                        <div class="md:w-1/2 mb-8 md:mb-0 md:px-8">
+                            <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                                <span class="step-number flex items-center justify-center w-12 h-12 bg-primary text-white rounded-full font-bold mb-4">4</span>
+                                <h3 class="text-xl font-semibold mb-3">Manage Attendees</h3>
+                                <p class="text-gray-600">Check-in guests, track attendance, and access real-time reports during and after your event.</p>
+                            </div>
+                        </div>
+                        <div class="md:w-1/2">
+                            <div class="bg-gray-100 h-64 rounded-lg flex items-center justify-center">
+                                <i class="fas fa-users text-5xl text-gray-400"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">What Our Customers Say</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Don't just take our word for it - hear from our satisfied customers</p>
+            </div>
+            
+            <div class="swiper-container testimonial-slider max-w-4xl mx-auto">
+                <div class="swiper-wrapper">
+                    <!-- Testimonial 1 -->
+                    <div class="swiper-slide bg-white p-8 rounded-xl shadow-sm">
+                        <div class="flex items-center mb-6">
+                            <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold mr-4">JD</div>
+                            <div>
+                                <h4 class="font-semibold">John Doe</h4>
+                                <p class="text-gray-500 text-sm">Event Organizer</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">"TicketyHub made selling tickets for our charity gala so simple. The platform is intuitive and the customer support was excellent when we had questions."</p>
+                        <div class="mt-4 text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    
+                    <!-- Testimonial 2 -->
+                    <div class="swiper-slide bg-white p-8 rounded-xl shadow-sm">
+                        <div class="flex items-center mb-6">
+                            <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold mr-4">AS</div>
+                            <div>
+                                <h4 class="font-semibold">Alice Smith</h4>
+                                <p class="text-gray-500 text-sm">Music Festival Director</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">"We've used several ticketing platforms over the years, but TicketyHub stands out for its reliability and great features. The real-time analytics are a game-changer."</p>
+                        <div class="mt-4 text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    
+                    <!-- Testimonial 3 -->
+                    <div class="swiper-slide bg-white p-8 rounded-xl shadow-sm">
+                        <div class="flex items-center mb-6">
+                            <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold mr-4">RJ</div>
+                            <div>
+                                <h4 class="font-semibold">Robert Johnson</h4>
+                                <p class="text-gray-500 text-sm">Conference Coordinator</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">"The customizable ticket options allowed us to create exactly what we needed for our multi-day conference. Attendees loved the mobile tickets too!"</p>
+                        <div class="mt-4 text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Add pagination -->
+                <div class="swiper-pagination mt-8"></div>
+                
+                <!-- Add navigation buttons -->
+                <div class="swiper-button-next text-primary"></div>
+                <div class="swiper-button-prev text-primary"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Simple, Transparent Pricing</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Choose the plan that fits your needs</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <!-- Basic Plan -->
+                <div class="pricing-card bg-white border border-gray-200 rounded-xl shadow-sm hover:shadow-md transition duration-300 transform hover:scale-105">
+                    <div class="p-8">
+                        <h3 class="text-xl font-semibold mb-2">Basic</h3>
+                        <p class="text-gray-600 mb-6">Perfect for small events and startups</p>
+                        <div class="mb-6">
+                            <span class="text-4xl font-bold text-dark">$19</span>
+                            <span class="text-gray-500">/month</span>
+                        </div>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>Up to 100 tickets per event</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>Basic ticket types</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>Email support</span>
+                            </li>
+                            <li class="flex items-center text-gray-400">
+                                <i class="fas fa-times text-red-400 mr-2"></i>
+                                <span>No premium features</span>
+                            </li>
+                        </ul>
+                        <button class="w-full bg-gray-100 text-dark px-6 py-3 rounded-lg font-medium hover:bg-gray-200 transition">
+                            Get Started
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Pro Plan (Featured) -->
+                <div class="pricing-card bg-gradient-to-br from-primary to-secondary rounded-xl shadow-lg transform hover:scale-105 transition duration-300 relative">
+                    <div class="absolute top-0 right-0 bg-yellow-400 text-dark text-xs font-bold px-3 py-1 rounded-bl-lg rounded-tr-lg">POPULAR</div>
+                    <div class="p-8 text-white">
+                        <h3 class="text-xl font-semibold mb-2">Professional</h3>
+                        <p class="text-white/80 mb-6">Ideal for growing businesses and frequent events</p>
+                        <div class="mb-6">
+                            <span class="text-4xl font-bold">$49</span>
+                            <span class="text-white/80">/month</span>
+                        </div>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-white mr-2"></i>
+                                <span>Up to 1,000 tickets per event</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-white mr-2"></i>
+                                <span>Advanced ticket types</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-white mr-2"></i>
+                                <span>Priority email support</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-white mr-2"></i>
+                                <span>Basic analytics</span>
+                            </li>
+                        </ul>
+                        <button class="w-full bg-white text-primary px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition">
+                            Get Started
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Enterprise Plan -->
+                <div class="pricing-card bg-white border border-gray-200 rounded-xl shadow-sm hover:shadow-md transition duration-300 transform hover:scale-105">
+                    <div class="p-8">
+                        <h3 class="text-xl font-semibold mb-2">Enterprise</h3>
+                        <p class="text-gray-600 mb-6">For large events and organizations</p>
+                        <div class="mb-6">
+                            <span class="text-4xl font-bold text-dark">$99</span>
+                            <span class="text-gray-500">/month</span>
+                        </div>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>Unlimited tickets</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>All premium features</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>24/7 phone support</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>Advanced analytics</span>
+                            </li>
+                        </ul>
+                        <button class="w-full bg-gray-100 text-dark px-6 py-3 rounded-lg font-medium hover:bg-gray-200 transition">
+                            Get Started
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <p class="text-gray-600">Need a custom solution? <a href="#contact" class="text-primary font-medium hover:underline">Contact us</a> for enterprise pricing.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact/Newsletter Section -->
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-md overflow-hidden">
+                <div class="md:flex">
+                    <div class="md:w-1/2 bg-gradient-to-r from-primary to-secondary p-8 text-white">
+                        <h2 class="text-2xl font-bold mb-4">Get In Touch</h2>
+                        <p class="mb-6">Have questions about our platform? Want to discuss your specific needs? We'd love to hear from you.</p>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <i class="fas fa-envelope mt-1 mr-4"></i>
+                                <div>
+                                    <h4 class="font-semibold">Email Us</h4>
+                                    <p>support@ticketyhub.com</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-phone-alt mt-1 mr-4"></i>
+                                <div>
+                                    <h4 class="font-semibold">Call Us</h4>
+                                    <p>+1 (555) 123-4567</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-map-marker-alt mt-1 mr-4"></i>
+                                <div>
+                                    <h4 class="font-semibold">Visit Us</h4>
+                                    <p>123 Tech Street, San Francisco, CA 94107</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 p-8">
+                        <h2 class="text-2xl font-bold text-dark mb-4">Send Us a Message</h2>
+                        <form id="contact-form" class="space-y-4">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Name</label>
+                                <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-primary focus:border-primary">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                                <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-primary focus:border-primary">
+                            </div>
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                                <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-primary focus:border-primary"></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-primary-dark transition">
+                                Send Message
+                            </button>
+                        </form>
+                        
+                        <div class="mt-8">
+                            <h3 class="text-lg font-semibold mb-4">Subscribe to Our Newsletter</h3>
+                            <form id="newsletter-form" class="flex">
+                                <input type="email" placeholder="Your email address" class="flex-grow px-4 py-2 border border-gray-300 rounded-l-lg focus:ring-primary focus:border-primary">
+                                <button type="submit" class="bg-secondary text-white px-4 py-2 rounded-r-lg hover:bg-secondary-dark transition">
+                                    Subscribe
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<?php include 'footer.php'; ?>
 <!-- FEATURES SECTION -->
 <section id="features" class="light-fr py-20 bg-gradient-to-r from-purple-500 to-indigo-500 text-white transition-colors duration-500 dark:bg-gradient-to-r dark:from-gray-900 dark:to-black relative overflow-hidden">
     <!-- Animated Gradient Overlay -->
