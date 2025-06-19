@@ -63,7 +63,7 @@
   <?php include './includes/home/how.php'; ?>
   <?php include './includes/home/testimonials.php'; ?>
     <?php include './includes/home/pricing.php'; ?>
-        <?php include './includes/home/pricing.php'; ?>
+        <?php include './includes/home/contact.php'; ?>
 
 <?php include 'footer.php'; ?>
     </main>
