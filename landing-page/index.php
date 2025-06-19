@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TicketyHub - Book Your Tickets with Ease</title>
-        <link rel="stylesheet" href="/font-awesome/css/all.css">
+        <link rel="stylesheet" href="./font-awesome/css/all.css">
     <!-- Tailwind CSS CDN -->
     <script src="./tailwind.js"></script>
         <script>
