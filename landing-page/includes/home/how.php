@@ -165,3 +165,45 @@
     </div>
 </section>
 <?php echo '' ;?>
+<style>
+    /* Animation for step items when they come into view */
+    .step-item {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: all 0.6s ease-out;
+    }
+    
+    .step-item.animate {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+    /* Gradient border animation for the active step */
+    .step-item:nth-child(odd) .bg-white {
+        border-left-color: theme('colors.primary');
+    }
+    
+    .step-item:nth-child(even) .bg-white {
+        border-left-color: theme('colors.secondary');
+    }
+</style>
+
+<script>
+    // Animate steps when they come into view
+    document.addEventListener('DOMContentLoaded', function() {
+        const stepItems = document.querySelectorAll('.step-item');
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+        
+        stepItems.forEach(item => {
+            observer.observe(item);
+        });
+    });
+</script>
