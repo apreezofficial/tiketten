@@ -340,6 +340,7 @@
 </script>
 .git .
 
+
     <!-- Pricing Section -->
     <section id="pricing" class="py-20 bg-white">
         <div class="container mx-auto px-6">
