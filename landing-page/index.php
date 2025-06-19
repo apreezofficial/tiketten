@@ -23,6 +23,9 @@
     </div>
     <?php include 'nav.php'; ?>
     <main id="main-content">
+    <?php include './home/hero.php'; ?>
+  <?php include './home/features.php'; ?>
+  <?php include './home/how.php'; ?>
 <!-- Testimonials Section -->
 <section id="testimonials" class="py-20 bg-gradient-to-br from-gray-50 to-white">
     <div class="container mx-auto px-4 sm:px-6">
