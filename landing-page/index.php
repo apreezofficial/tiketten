@@ -26,6 +26,7 @@
     <?php include './includes/home/hero.php'; ?>
   <?php include './includes/home/feature.php'; ?>
   <?php include './includes/home/how.php'; ?>
+  <?php include './includes/home/testimonials.php'; ?>
     <!-- Contact/Newsletter Section -->
     <section id="contact" class="py-20 bg-gray-50">
         <div class="container mx-auto px-6">
