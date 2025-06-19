@@ -30,7 +30,6 @@
     <?php include './includes/home/pricing.php'; ?>
 
 <?php include 'footer.php'; ?>
-<!-- FEATURES SECTION -->
     </main>
     <!-- Scripts -->
     <script src="assets/ts/preloader.ts"></script>
