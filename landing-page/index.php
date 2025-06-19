@@ -6,7 +6,7 @@
     <title>TicketyHub - Book Your Tickets with Ease</title>
         <link rel="stylesheet" href="/font-awesome/css/all.css">
     <!-- Tailwind CSS CDN -->
-    <script src="/tailwind.js"></script>
+    <script src="./tailwind.js"></script>
         <script>
         tailwind.config = {
             darkMode: 'class'
