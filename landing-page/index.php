@@ -29,6 +29,7 @@
   <?php include './includes/home/testimonials.php'; ?>
     <?php include './includes/home/pricing.php'; ?>
 
+
 <?php include 'footer.php'; ?>
 <!-- FEATURES SECTION -->
     </main>
