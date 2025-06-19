@@ -646,7 +646,7 @@ document.addEventListener('DOMContentLoaded', function() {
     carousel.addEventListener('mouseenter', () => clearInterval(autoSlideInterval));
     carousel.addEventListener('mouseleave', startAutoSlide);
 });
-</script>
+</script>git
     <!-- Contact/Newsletter Section -->
     <section id="contact" class="py-20 bg-gray-50">
         <div class="container mx-auto px-6">
