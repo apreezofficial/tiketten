@@ -24,7 +24,7 @@
     <?php include 'nav.php'; ?>
     <main id="main-content">
     <?php include './includes/home/hero.php'; ?>
-  <?php include './includes/home/features.php'; ?>
+  <?php include './includes/home/feature.php'; ?>
   <?php include './includes/home/how.php'; ?>
 <!-- Testimonials Section -->
 <section id="testimonials" class="py-20 bg-gradient-to-br from-gray-50 to-white">
