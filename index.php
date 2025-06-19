@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TicketyHub - Book Your Tickets with Ease</title>
     <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/tailwind.js"></script>
         <script>
         tailwind.config = {
             darkMode: 'class'
@@ -51,36 +51,40 @@
             </a>
         </div>
     </section>
-
-    <!-- Features Section -->
-    <section id="features" class="py-20 bg-gray-50">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Amazing Features</h2>
-                <p class="text-gray-600 max-w-2xl mx-auto">Everything you need to manage your event tickets in one place</p>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Feature 1 -->
-                <div class="feature-card bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+<!-- Features Section -->
+<section id="features" class="py-20 bg-gradient-to-br from-gray-50 to-gray-100">
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Amazing Features</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto">Everything you need to manage your event tickets in one place</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Feature 1 -->
+            <div class="feature-card relative p-[3px] rounded-xl bg-gradient-to-br from-primary via-secondary to-primary bg-[length:200%_200%] animate-gradient-rotate">
+                <div class="bg-white p-8 rounded-lg h-full transition-all duration-300 hover:-translate-y-2">
                     <div class="text-primary mb-6">
                         <i class="fas fa-ticket-alt text-4xl"></i>
                     </div>
                     <h3 class="text-xl font-semibold mb-3">Easy Ticketing</h3>
                     <p class="text-gray-600">Create and customize tickets for your events in minutes with our intuitive interface.</p>
                 </div>
-                
-                <!-- Feature 2 -->
-                <div class="feature-card bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+            </div>
+            
+            <!-- Feature 2 -->
+            <div class="feature-card relative p-[3px] rounded-xl bg-gradient-to-br from-primary via-secondary to-primary bg-[length:200%_200%] animate-gradient-rotate animation-delay-500">
+                <div class="bg-white p-8 rounded-lg h-full transition-all duration-300 hover:-translate-y-2">
                     <div class="text-primary mb-6">
                         <i class="fas fa-chart-line text-4xl"></i>
                     </div>
                     <h3 class="text-xl font-semibold mb-3">Real-time Analytics</h3>
                     <p class="text-gray-600">Track ticket sales, attendance, and revenue with comprehensive dashboards.</p>
                 </div>
-                
-                <!-- Feature 3 -->
-                <div class="feature-card bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+            </div>
+            
+            <!-- Feature 3 -->
+            <div class="feature-card relative p-[3px] rounded-xl bg-gradient-to-br from-primary via-secondary to-primary bg-[length:200%_200%] animate-gradient-rotate animation-delay-1000">
+                <div class="bg-white p-8 rounded-lg h-full transition-all duration-300 hover:-translate-y-2">
                     <div class="text-primary mb-6">
                         <i class="fas fa-shield-alt text-4xl"></i>
                     </div>
@@ -89,9 +93,9 @@
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- How It Works Section -->
+    </div>
+</section>
+  <!-- How It Works Section -->
     <section id="how-it-works" class="py-20 bg-white">
         <div class="container mx-auto px-6">
             <div class="text-center mb-16">
@@ -436,82 +440,6 @@
 
 <?php include 'footer.php'; ?>
 <!-- FEATURES SECTION -->
-<section id="features" class="light-fr py-20 bg-gradient-to-r from-purple-500 to-indigo-500 text-white transition-colors duration-500 dark:bg-gradient-to-r dark:from-gray-900 dark:to-black relative overflow-hidden">
-    <!-- Animated Gradient Overlay -->
-    <div id="gradient-overlay" class="absolute inset-0 bg-gradient-to-r from-purple-500 to-indigo-500 opacity-50 z-0 transition-transform duration-500 rotate-animation"></div>
-
-    <div class="container mx-auto px-4 text-center relative z-10">
-        <h2 class="text-4xl font-bold mb-12 text-white animate-fade-in dark:text-indigo-400">Why Choose TicketyHub?</h2>
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            <?php
-            // Feature items array
-            $features = [
-                [
-                    'icon' => 'fas fa-bolt',
-                    'title' => 'Instant Booking',
-                    'description' => 'Secure your tickets in seconds with our blazing fast system.'
-                ],
-                [
-                    'icon' => 'fas fa-lock',
-                    'title' => '100% Secure Payments',
-                    'description' => 'All transactions are encrypted and completely secure.'
-                ],
-                [
-                    'icon' => 'fas fa-tags',
-                    'title' => 'Exclusive Discounts',
-                    'description' => 'Get unbeatable deals and save big on top events.'
-                ],
-                [
-                    'icon' => 'fas fa-calendar-alt',
-                    'title' => 'Real-Time Updates',
-                    'description' => 'Stay informed with live event changes and availability.'
-                ],
-                [
-                    'icon' => 'fas fa-ticket-alt',
-                    'title' => 'Mobile Tickets',
-                    'description' => 'Access your tickets on the go with our mobile-friendly platform.'
-                ],
-                [
-                    'icon' => 'fas fa-headset',
-                    'title' => '24/7 Support',
-                    'description' => 'Our team is always ready to help you anytime you need us.'
-                ]
-            ];
-
-            // Loop through each feature and display it
-            foreach ($features as $feature) {
-                echo '
-                <div class="bg-white dark:bg-gray-800 dark:text-white p-8 rounded-lg shadow-lg transform hover:scale-105 hover:shadow-indigo-300 transition duration-300 feature-card">
-                    <div class="text-indigo-600 dark:text-indigo-400 text-5xl mb-4"><i class="' . $feature['icon'] . '"></i></div>
-                    <h3 class="text-2xl font-bold mb-2">' . $feature['title'] . '</h3>
-                    <p class="text-gray-600 dark:text-gray-300">' . $feature['description'] . '</p>
-                </div>
-                ';
-            }
-            ?>
-        </div>
-    </div>
-</section>
-<script>
-    document.addEventListener('DOMContentLoaded', () => {
-        const featureCards = document.querySelectorAll('.feature-card');
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
-            });
-        }, {
-            threshold: 0.2 // triggers sooner for faster effect
-        });
-
-        featureCards.forEach(card => {
-            observer.observe(card);
-        });
-    });
-</script>
     </main>
 
     <!-- Include Footer -->
@@ -519,6 +447,7 @@
 
     <!-- Scripts -->
     <script src="assets/ts/preloader.ts"></script>
+        <script src="assets/ts/animations.ts"></script>
     <script src="assets/ts/main.ts"></script>
 </body>
 </html>
