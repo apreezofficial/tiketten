@@ -347,6 +347,8 @@
 
 .
 
+
+
 .
     <!-- Pricing Section -->
     <section id="pricing" class="py-20 bg-white">
