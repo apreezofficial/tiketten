@@ -1,4 +1,5 @@
- @keyframes gradient-rotate {
+
+        @keyframes gradient-rotate {
             0% { background-position: 0% 50%; }
             100% { background-position: 100% 50%; }
         }
@@ -10,5 +11,14 @@
         }
         .animation-delay-1000 {
             animation-delay: 1s;
+        }
+        .animation-delay-1500 {
+            animation-delay: 1.5s;
+        }
+        .animation-delay-2000 {
+            animation-delay: 2s;
+        }
+        .animation-delay-2500 {
+            animation-delay: 2.5s;
         }
     
