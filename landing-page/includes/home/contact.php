@@ -78,8 +78,8 @@
                             <div class="form-group">
                                 <label for="name" class="block text-sm font-medium text-gray-700 mb-2">Name *</label>
                                 <div class="relative">
-                                    <input type="text" id="name" name="name"  
-                                           class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition duration-300"
+                                    <input type="text" id="name" name="name" 
+                                           class="required w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition duration-300"
                                            placeholder="Your name">
                                     <div class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
                                         <i class="fas fa-user text-gray-400"></i>
@@ -91,8 +91,8 @@
                             <div class="form-group">
                                 <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email *</label>
                                 <div class="relative">
-                                    <input type="email" id="email" name="email" required 
-                                           class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition duration-300"
+                                    <input type="email" id="email" name="email" 
+                                           class="required w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition duration-300"
                                            placeholder="your@email.com">
                                     <div class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
                                         <i class="fas fa-envelope text-gray-400"></i>
@@ -117,8 +117,8 @@
                         <div class="form-group">
                             <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Message *</label>
                             <div class="relative">
-                                <textarea id="message" name="message" rows="5" required 
-                                          class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition duration-300"
+                                <textarea id="message" name="message" rows="5"  
+                                          class="required w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition duration-300"
                                           placeholder="Your message..."></textarea>
                                 <div class="absolute top-3 right-3 flex items-center pr-3 pointer-events-none">
                                     <i class="fas fa-pen text-gray-400"></i>
@@ -156,8 +156,8 @@
                         <h3 class="text-xl font-semibold mb-6">Subscribe to Our Newsletter</h3>
                         <form id="newsletter-form" class="flex">
                             <div class="relative flex-grow">
-                                <input type="email" id="newsletter-email" name="email" required 
-                                       class="w-full px-4 py-3 border border-gray-300 rounded-l-lg focus:ring-2 focus:ring-primary focus:border-primary transition duration-300"
+                                <input type="email" id="newsletter-email" name="email" 
+                                       class="required w-full px-4 py-3 border border-gray-300 rounded-l-lg focus:ring-2 focus:ring-primary focus:border-primary transition duration-300"
                                        placeholder="Your email address">
                                 <div class="absolute inset-y-0 right-3 flex items-center pointer-events-none">
                                     <i class="fas fa-paper-plane text-gray-400"></i>
@@ -317,7 +317,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Form validation function
     function validateForm(form) {
         let isValid = true;
-        const requiredFields = form.querySelectorAll('[required]');
+        const requiredFields = form.querySelectorAll('.required');
         
         requiredFields.forEach(field => {
             const errorElement = field.closest('.form-group').querySelector('.error-message');
