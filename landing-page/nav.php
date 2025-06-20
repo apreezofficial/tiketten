@@ -32,7 +32,8 @@
                 <a href="#how-it-works" class="block px-3 py-2 rounded hover:bg-gray-100 nav-link">How It Works</a>
                 <a href="#testimonials" class="block px-3 py-2 rounded hover:bg-gray-100 nav-link">Testimonials</a>
                 <a href="#pricing" class="block px-3 py-2 rounded hover:bg-gray-100 nav-link">Pricing</a>
-                <a href="#contact" class="block px-3 py-2 rounded hover:bg-gray-100 nav-link">Contact</a>
+             <?php echo'<a href="#contact" class="block px-3 py-2 rounded hover:bg-gray-100 nav-link">Contact</a>';?>
             </div>
         </nav>
     </header>
+    
