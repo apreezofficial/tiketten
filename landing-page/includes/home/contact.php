@@ -78,7 +78,7 @@
                             <div class="form-group">
                                 <label for="name" class="block text-sm font-medium text-gray-700 mb-2">Name *</label>
                                 <div class="relative">
-                                    <input type="text" id="name" name="name" required 
+                                    <input type="text" id="name" name="name"  
                                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition duration-300"
                                            placeholder="Your name">
                                     <div class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
