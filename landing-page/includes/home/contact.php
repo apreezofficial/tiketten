@@ -31,7 +31,7 @@
                                 </div>
                                 <div>
                                     <h4 class="font-semibold text-lg">Call Us</h4>
-                                    <p class="text-white/80 hover:text-white transition">+1 (555) 123-4567</p>
+                                    <p class="text-white/80 hover:text-white transition">+234 (906) 477-9856</p>
                                 </div>
                             </div>
                             
@@ -41,7 +41,7 @@
                                 </div>
                                 <div>
                                     <h4 class="font-semibold text-lg">Visit Us</h4>
-                                    <p class="text-white/80 hover:text-white transition">123 Tech Street, San Francisco, CA</p>
+                                    <p class="text-white/80 hover:text-white transition">123 Tech Street, San Francisco, USA</p>
                                 </div>
                             </div>
                         </div>
